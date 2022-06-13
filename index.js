@@ -29,7 +29,7 @@ app.use("/learner", leanerRoute);
 
 app.use("/course", learnerValidation, courseRoute);
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     APP: "JWT Based API Application",
     message: "Successfully Running the Application",
